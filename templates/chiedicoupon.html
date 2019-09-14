@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Prova</title>
+</head>
+<body>
+    <h1>
+        Inserimento dati
+    </h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tr><td>Inserisci il coupon:</td><td><input type="text" name="coupon_code" id="coupon_code"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Verifica codice"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
