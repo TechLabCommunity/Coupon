@@ -9,3 +9,4 @@ class Coupon(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     used_by_seller = models.ForeignKey(User, unique=False, on_delete=models.CASCADE, blank=True, null=True)
+
